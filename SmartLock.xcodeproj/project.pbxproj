@@ -8,12 +8,15 @@
 
 /* Begin PBXBuildFile section */
 		0D2CFB6C1FB9426B00AD4FC1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D2CFB6B1FB9426B00AD4FC1 /* AppDelegate.swift */; };
-		0D2CFB6E1FB9426B00AD4FC1 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D2CFB6D1FB9426B00AD4FC1 /* ViewController.swift */; };
 		0D2CFB711FB9426B00AD4FC1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0D2CFB6F1FB9426B00AD4FC1 /* Main.storyboard */; };
 		0D2CFB731FB9426B00AD4FC1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0D2CFB721FB9426B00AD4FC1 /* Assets.xcassets */; };
 		0D2CFB761FB9426B00AD4FC1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0D2CFB741FB9426B00AD4FC1 /* LaunchScreen.storyboard */; };
 		0D2CFB811FB9426B00AD4FC1 /* SmartLockTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D2CFB801FB9426B00AD4FC1 /* SmartLockTests.swift */; };
 		0D2CFB8C1FB9426B00AD4FC1 /* SmartLockUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D2CFB8B1FB9426B00AD4FC1 /* SmartLockUITests.swift */; };
+		0D78F1681FBEEB6B008B7AEF /* UIScreenUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D78F1671FBEEB6B008B7AEF /* UIScreenUtils.swift */; };
+		0D78F1701FBEF14C008B7AEF /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D78F16D1FBEF14B008B7AEF /* ViewController.swift */; };
+		0D78F1711FBEF14C008B7AEF /* KeyControlView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D78F16E1FBEF14B008B7AEF /* KeyControlView.swift */; };
+		0D78F1721FBEF14C008B7AEF /* KeyControlView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0D78F16F1FBEF14C008B7AEF /* KeyControlView.xib */; };
 		50DD636022A286AA7077F902 /* Pods_SmartLockTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DC1F4D3F776B3442F21A9ABA /* Pods_SmartLockTests.framework */; };
 		6EDB92B05BAE89AAA2E5B7E7 /* Pods_SmartLockUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DCD348A86AAB6D380DAF809E /* Pods_SmartLockUITests.framework */; };
 		B81BF4F6FE8831F0261A2698 /* Pods_SmartLock.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C08D2F8B2F59ADF1827E95A0 /* Pods_SmartLock.framework */; };
@@ -39,7 +42,6 @@
 /* Begin PBXFileReference section */
 		0D2CFB681FB9426B00AD4FC1 /* SmartLock.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SmartLock.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0D2CFB6B1FB9426B00AD4FC1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		0D2CFB6D1FB9426B00AD4FC1 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		0D2CFB701FB9426B00AD4FC1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		0D2CFB721FB9426B00AD4FC1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0D2CFB751FB9426B00AD4FC1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -50,6 +52,10 @@
 		0D2CFB871FB9426B00AD4FC1 /* SmartLockUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SmartLockUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		0D2CFB8B1FB9426B00AD4FC1 /* SmartLockUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SmartLockUITests.swift; sourceTree = "<group>"; };
 		0D2CFB8D1FB9426B00AD4FC1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0D78F1671FBEEB6B008B7AEF /* UIScreenUtils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIScreenUtils.swift; sourceTree = "<group>"; };
+		0D78F16D1FBEF14B008B7AEF /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		0D78F16E1FBEF14B008B7AEF /* KeyControlView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KeyControlView.swift; sourceTree = "<group>"; };
+		0D78F16F1FBEF14C008B7AEF /* KeyControlView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = KeyControlView.xib; sourceTree = "<group>"; };
 		39BF81210FE0628EBE0DE1C3 /* Pods-SmartLockUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SmartLockUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SmartLockUITests/Pods-SmartLockUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		86A81E3977D0493CE3B52C03 /* Pods-SmartLockTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SmartLockTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-SmartLockTests/Pods-SmartLockTests.release.xcconfig"; sourceTree = "<group>"; };
 		89396993FFFE4C19017EE292 /* Pods-SmartLockUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SmartLockUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-SmartLockUITests/Pods-SmartLockUITests.release.xcconfig"; sourceTree = "<group>"; };
@@ -115,11 +121,14 @@
 			isa = PBXGroup;
 			children = (
 				0D2CFB6B1FB9426B00AD4FC1 /* AppDelegate.swift */,
-				0D2CFB6D1FB9426B00AD4FC1 /* ViewController.swift */,
 				0D2CFB6F1FB9426B00AD4FC1 /* Main.storyboard */,
 				0D2CFB721FB9426B00AD4FC1 /* Assets.xcassets */,
 				0D2CFB741FB9426B00AD4FC1 /* LaunchScreen.storyboard */,
+				0D78F16E1FBEF14B008B7AEF /* KeyControlView.swift */,
+				0D78F16F1FBEF14C008B7AEF /* KeyControlView.xib */,
+				0D78F16D1FBEF14B008B7AEF /* ViewController.swift */,
 				0D2CFB771FB9426B00AD4FC1 /* Info.plist */,
+				0D78F1671FBEEB6B008B7AEF /* UIScreenUtils.swift */,
 			);
 			path = SmartLock;
 			sourceTree = "<group>";
@@ -281,6 +290,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0D78F1721FBEF14C008B7AEF /* KeyControlView.xib in Resources */,
 				0D2CFB761FB9426B00AD4FC1 /* LaunchScreen.storyboard in Resources */,
 				0D2CFB731FB9426B00AD4FC1 /* Assets.xcassets in Resources */,
 				0D2CFB711FB9426B00AD4FC1 /* Main.storyboard in Resources */,
@@ -467,7 +477,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0D2CFB6E1FB9426B00AD4FC1 /* ViewController.swift in Sources */,
+				0D78F1711FBEF14C008B7AEF /* KeyControlView.swift in Sources */,
+				0D78F1701FBEF14C008B7AEF /* ViewController.swift in Sources */,
+				0D78F1681FBEEB6B008B7AEF /* UIScreenUtils.swift in Sources */,
 				0D2CFB6C1FB9426B00AD4FC1 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

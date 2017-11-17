@@ -7,11 +7,19 @@
 //
 
 import UIKit
+import RxSwift
+import RxCocoa
 
 class ViewController: UIViewController {
 
+    let disposeBag = DisposeBag()
+    
+    let xibView = KeyControlView(frame: CGRect(x: 0, y: 0, width: UIScreenUtil.screenWidth(), height: UIScreenUtil.screenHeight()))
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        view.addSubview(xibView)
+        bind()
         // Do any additional setup after loading the view, typically from a nib.
     }
 
@@ -20,6 +28,15 @@ class ViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
 
-
+    func bind(){
+        xibView.openButton.rx.tap
+            .subscribe(onNext: { print("open") })
+            .disposed(by: disposeBag)
+        
+        xibView.closeButton.rx.tap
+            .subscribe(onNext: { print("close") })
+            .disposed(by: disposeBag)
+    }
+ 
+    
 }
-
