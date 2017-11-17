@@ -8,6 +8,8 @@ target 'SmartLock' do
   # Pods for SmartLock
   pod 'RxSwift',    '~> 4.0'
   pod 'RxCocoa',    '~> 4.0'
+  pod 'APIKit', '~> 3.1'
+  pod "Himotoki", "~> 3.1"
 
   target 'SmartLockTests' do
     inherit! :search_paths
