@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0D00874B1FBEF5B8007697B1 /* KeyStatusRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D00874A1FBEF5B8007697B1 /* KeyStatusRepository.swift */; };
+		0D00874D1FBEF75C007697B1 /* Session+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D00874C1FBEF75C007697B1 /* Session+Extension.swift */; };
+		0D00874F1FBEF7C1007697B1 /* APIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D00874E1FBEF7C1007697B1 /* APIClient.swift */; };
+		0D0087531FBEF9B3007697B1 /* KeyControlViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D0087521FBEF9B3007697B1 /* KeyControlViewModel.swift */; };
 		0D2CFB6C1FB9426B00AD4FC1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D2CFB6B1FB9426B00AD4FC1 /* AppDelegate.swift */; };
 		0D2CFB711FB9426B00AD4FC1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0D2CFB6F1FB9426B00AD4FC1 /* Main.storyboard */; };
 		0D2CFB731FB9426B00AD4FC1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0D2CFB721FB9426B00AD4FC1 /* Assets.xcassets */; };
@@ -40,6 +44,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0D00874A1FBEF5B8007697B1 /* KeyStatusRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyStatusRepository.swift; sourceTree = "<group>"; };
+		0D00874C1FBEF75C007697B1 /* Session+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Session+Extension.swift"; sourceTree = "<group>"; };
+		0D00874E1FBEF7C1007697B1 /* APIClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIClient.swift; sourceTree = "<group>"; };
+		0D0087521FBEF9B3007697B1 /* KeyControlViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyControlViewModel.swift; sourceTree = "<group>"; };
 		0D2CFB681FB9426B00AD4FC1 /* SmartLock.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SmartLock.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0D2CFB6B1FB9426B00AD4FC1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0D2CFB701FB9426B00AD4FC1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -129,6 +137,10 @@
 				0D78F16D1FBEF14B008B7AEF /* ViewController.swift */,
 				0D2CFB771FB9426B00AD4FC1 /* Info.plist */,
 				0D78F1671FBEEB6B008B7AEF /* UIScreenUtils.swift */,
+				0D00874A1FBEF5B8007697B1 /* KeyStatusRepository.swift */,
+				0D00874C1FBEF75C007697B1 /* Session+Extension.swift */,
+				0D00874E1FBEF7C1007697B1 /* APIClient.swift */,
+				0D0087521FBEF9B3007697B1 /* KeyControlViewModel.swift */,
 			);
 			path = SmartLock;
 			sourceTree = "<group>";
@@ -321,11 +333,17 @@
 			);
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-SmartLock/Pods-SmartLock-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/APIKit/APIKit.framework",
+				"${BUILT_PRODUCTS_DIR}/Himotoki/Himotoki.framework",
+				"${BUILT_PRODUCTS_DIR}/Result/Result.framework",
 				"${BUILT_PRODUCTS_DIR}/RxCocoa/RxCocoa.framework",
 				"${BUILT_PRODUCTS_DIR}/RxSwift/RxSwift.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/APIKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Himotoki.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Result.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxCocoa.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxSwift.framework",
 			);
@@ -477,10 +495,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0D00874D1FBEF75C007697B1 /* Session+Extension.swift in Sources */,
+				0D00874F1FBEF7C1007697B1 /* APIClient.swift in Sources */,
+				0D0087531FBEF9B3007697B1 /* KeyControlViewModel.swift in Sources */,
 				0D78F1711FBEF14C008B7AEF /* KeyControlView.swift in Sources */,
 				0D78F1701FBEF14C008B7AEF /* ViewController.swift in Sources */,
 				0D78F1681FBEEB6B008B7AEF /* UIScreenUtils.swift in Sources */,
 				0D2CFB6C1FB9426B00AD4FC1 /* AppDelegate.swift in Sources */,
+				0D00874B1FBEF5B8007697B1 /* KeyStatusRepository.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
