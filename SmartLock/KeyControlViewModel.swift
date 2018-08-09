@@ -30,8 +30,8 @@ class KeyControlViewModel: NSObject {
                 switch event {
                 case .next(let repos):
                     self?.repos.value = [repos]
-                case .error(let error): break
-                self?.error.value = error
+                case .error(let error):
+                    self?.error.value = error
                 default: break
                 }
             }
