@@ -13,6 +13,7 @@
 		0D0087531FBEF9B3007697B1 /* KeyControlViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D0087521FBEF9B3007697B1 /* KeyControlViewModel.swift */; };
 		0D21ECCE211C965100520496 /* NetworkExtension.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0D21ECCD211C965100520496 /* NetworkExtension.framework */; };
 		0D21ECD0211C99EF00520496 /* Wifi.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D21ECCF211C99EF00520496 /* Wifi.swift */; };
+		0D21ECD2211D35DF00520496 /* UIAlertController+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D21ECD1211D35DF00520496 /* UIAlertController+Extension.swift */; };
 		0D2CFB6C1FB9426B00AD4FC1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D2CFB6B1FB9426B00AD4FC1 /* AppDelegate.swift */; };
 		0D2CFB711FB9426B00AD4FC1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0D2CFB6F1FB9426B00AD4FC1 /* Main.storyboard */; };
 		0D2CFB731FB9426B00AD4FC1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0D2CFB721FB9426B00AD4FC1 /* Assets.xcassets */; };
@@ -53,6 +54,7 @@
 		0D21ECCC211C953800520496 /* SmartLock.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = SmartLock.entitlements; sourceTree = "<group>"; };
 		0D21ECCD211C965100520496 /* NetworkExtension.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = NetworkExtension.framework; path = System/Library/Frameworks/NetworkExtension.framework; sourceTree = SDKROOT; };
 		0D21ECCF211C99EF00520496 /* Wifi.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Wifi.swift; sourceTree = "<group>"; };
+		0D21ECD1211D35DF00520496 /* UIAlertController+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIAlertController+Extension.swift"; sourceTree = "<group>"; };
 		0D2CFB681FB9426B00AD4FC1 /* SmartLock.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SmartLock.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0D2CFB6B1FB9426B00AD4FC1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0D2CFB701FB9426B00AD4FC1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -109,6 +111,58 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0D21ECD3211D35E400520496 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				0D00874C1FBEF75C007697B1 /* Session+Extension.swift */,
+				0D21ECD1211D35DF00520496 /* UIAlertController+Extension.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		0D21ECD4211D35FC00520496 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				0D78F16E1FBEF14B008B7AEF /* KeyControlView.swift */,
+				0D78F16F1FBEF14C008B7AEF /* KeyControlView.xib */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		0D21ECD5211D361F00520496 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				0D78F16D1FBEF14B008B7AEF /* ViewController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		0D21ECD6211D363000520496 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				0D0087521FBEF9B3007697B1 /* KeyControlViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		0D21ECD7211D363900520496 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				0D21ECCF211C99EF00520496 /* Wifi.swift */,
+				0D00874A1FBEF5B8007697B1 /* KeyStatusRepository.swift */,
+				0D00874E1FBEF7C1007697B1 /* APIClient.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		0D21ECD8211D364C00520496 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				0D78F1671FBEEB6B008B7AEF /* UIScreenUtils.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
 		0D2CFB5F1FB9426A00AD4FC1 = {
 			isa = PBXGroup;
 			children = (
@@ -134,21 +188,18 @@
 		0D2CFB6A1FB9426B00AD4FC1 /* SmartLock */ = {
 			isa = PBXGroup;
 			children = (
+				0D21ECD7211D363900520496 /* Models */,
+				0D21ECD6211D363000520496 /* ViewModels */,
+				0D21ECD5211D361F00520496 /* ViewControllers */,
+				0D21ECD4211D35FC00520496 /* Views */,
+				0D21ECD3211D35E400520496 /* Extensions */,
+				0D21ECD8211D364C00520496 /* Utils */,
 				0D21ECCC211C953800520496 /* SmartLock.entitlements */,
-				0D21ECCF211C99EF00520496 /* Wifi.swift */,
 				0D2CFB6B1FB9426B00AD4FC1 /* AppDelegate.swift */,
 				0D2CFB6F1FB9426B00AD4FC1 /* Main.storyboard */,
 				0D2CFB721FB9426B00AD4FC1 /* Assets.xcassets */,
 				0D2CFB741FB9426B00AD4FC1 /* LaunchScreen.storyboard */,
-				0D78F16E1FBEF14B008B7AEF /* KeyControlView.swift */,
-				0D78F16F1FBEF14C008B7AEF /* KeyControlView.xib */,
-				0D78F16D1FBEF14B008B7AEF /* ViewController.swift */,
 				0D2CFB771FB9426B00AD4FC1 /* Info.plist */,
-				0D78F1671FBEEB6B008B7AEF /* UIScreenUtils.swift */,
-				0D00874A1FBEF5B8007697B1 /* KeyStatusRepository.swift */,
-				0D00874C1FBEF75C007697B1 /* Session+Extension.swift */,
-				0D00874E1FBEF7C1007697B1 /* APIClient.swift */,
-				0D0087521FBEF9B3007697B1 /* KeyControlViewModel.swift */,
 			);
 			path = SmartLock;
 			sourceTree = "<group>";
@@ -518,6 +569,7 @@
 				0D0087531FBEF9B3007697B1 /* KeyControlViewModel.swift in Sources */,
 				0D78F1711FBEF14C008B7AEF /* KeyControlView.swift in Sources */,
 				0D78F1701FBEF14C008B7AEF /* ViewController.swift in Sources */,
+				0D21ECD2211D35DF00520496 /* UIAlertController+Extension.swift in Sources */,
 				0D78F1681FBEEB6B008B7AEF /* UIScreenUtils.swift in Sources */,
 				0D2CFB6C1FB9426B00AD4FC1 /* AppDelegate.swift in Sources */,
 				0D00874B1FBEF5B8007697B1 /* KeyStatusRepository.swift in Sources */,
