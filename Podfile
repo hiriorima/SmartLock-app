@@ -10,6 +10,7 @@ target 'SmartLock' do
   pod 'RxCocoa',    '~> 4.0'
   pod 'APIKit', '~> 3.1'
   pod "Himotoki", "~> 3.1"
+  pod 'NCMB', :git => 'https://github.com/NIFTYCloud-mbaas/ncmb_ios.git'
 
   target 'SmartLockTests' do
     inherit! :search_paths
