@@ -85,6 +85,15 @@ class ViewController: UIViewController {
             })
             .disposed(by: disposeBag)
         
+        viewModel.error.asObservable()
+            .subscribe(onNext: { error in
+                if error != nil {
+                    UIAlertController(title: "Error", message: "\(String(describing: error))", preferredStyle: .alert)
+                        .addAction(title: "OK", style: .cancel)
+                        .show()
+                }
+            })
+        
         xibView.openButton.rx.tap
             .subscribe(onNext: {
                 self.viewModel.keyControl(status: "open")
