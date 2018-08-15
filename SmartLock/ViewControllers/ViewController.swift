@@ -81,6 +81,7 @@ class ViewController: UIViewController {
                     .addAction(title: "OK", style: .cancel)
                     .show()
             }, onCompleted: { () in
+                self.getNewKeyStatus()
             }, onDisposed: { () in
             })
             .disposed(by: disposeBag)
