@@ -21,7 +21,7 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         view.addSubview(xibView)
-
+        
         if !wifi.isConnected(){
             self.wifiConnect()
         }
@@ -55,22 +55,31 @@ class ViewController: UIViewController {
             .filter { x in
                 return !x.isEmpty
             }
-            .subscribe(onNext: { [unowned self] x in
-                print("request!")
-                }, onError: { error in
+            .subscribe(onNext: { result in
+                if result[0].status == "open" {
+                    self.xibView.setCurrentLockStatus(isLock: false)
+                } else if result[0].status == "close" {
+                    self.xibView.setCurrentLockStatus(isLock: true)
+                }
+            }, onError: { error in
+                UIAlertController(title: "Error", message: "\(error)", preferredStyle: .alert)
+                    .addAction(title: "OK", style: .cancel)
+                    .show()
             }, onCompleted: { () in
             }, onDisposed: { () in
             })
             .disposed(by: disposeBag)
         
         xibView.openButton.rx.tap
-            .subscribe(onNext: { self.viewModel.keyControl(status: "open") })
+            .subscribe(onNext: {
+                self.viewModel.keyControl(status: "open")
+            })
             .disposed(by: disposeBag)
         
         xibView.closeButton.rx.tap
-            .subscribe(onNext: { self.viewModel.keyControl(status: "close") })
+            .subscribe(onNext: {
+                self.viewModel.keyControl(status: "close")
+            })
             .disposed(by: disposeBag)
     }
-    
-    
 }

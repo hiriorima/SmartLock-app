@@ -8,11 +8,16 @@
 
 import UIKit
 
+@IBDesignable
 class KeyControlView: UIView {
     
     @IBOutlet weak var openButton: UIButton!
     @IBOutlet weak var closeButton: UIButton!
     @IBOutlet var contentView: UIView!
+    @IBOutlet weak var currentLockStatusImage: UIImageView!
+    
+    let lockImage = UIImage(named:"Lock")!
+    let unlockImage = UIImage(named:"Unlock")!
     
     override init(frame: CGRect){
         super.init(frame: frame)
@@ -28,6 +33,15 @@ class KeyControlView: UIView {
         let view = Bundle.main.loadNibNamed("KeyControlView", owner: self, options: nil)?.first as! UIView
         view.frame = self.bounds
         self.addSubview(view)
+    }
+    
+    func setCurrentLockStatus(isLock: Bool){
+        
+        if isLock {
+            currentLockStatusImage.image = lockImage
+        } else {
+            currentLockStatusImage.image = unlockImage
+        }
     }
     /*
      // Only override draw() if you perform custom drawing.

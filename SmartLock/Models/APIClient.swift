@@ -15,7 +15,7 @@ protocol KeyRequest: Request {
 
 extension KeyRequest {
     var baseURL: URL {
-        return URL(string: "https://192.168.1.11:8000")!
+        return URL(string: "http://192.168.11.13:8000")!
     }
     
     func intercept(object: Any, urlResponse: HTTPURLResponse) throws -> Any {
@@ -38,9 +38,15 @@ struct ControlKeyRequest: KeyRequest {
         return .post
     }
     var path: String {
-        return "/api/keys"
+        return "/api/keys/"
     }
     typealias Response = KeyStatusRepository
+    
+    var bodyParameters: BodyParameters? {
+        return JSONBodyParameters(JSONObject: [
+            "status": status,
+            ])
+    }
     
     init(status: String) {
         self.status = status

@@ -25,6 +25,7 @@
 		0D78F1701FBEF14C008B7AEF /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D78F16D1FBEF14B008B7AEF /* ViewController.swift */; };
 		0D78F1711FBEF14C008B7AEF /* KeyControlView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D78F16E1FBEF14B008B7AEF /* KeyControlView.swift */; };
 		0D78F1721FBEF14C008B7AEF /* KeyControlView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0D78F16F1FBEF14C008B7AEF /* KeyControlView.xib */; };
+		0DC951B82120A109004D5FD9 /* UIView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DC951B72120A109004D5FD9 /* UIView+Extension.swift */; };
 		50DD636022A286AA7077F902 /* Pods_SmartLockTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DC1F4D3F776B3442F21A9ABA /* Pods_SmartLockTests.framework */; };
 		6EDB92B05BAE89AAA2E5B7E7 /* Pods_SmartLockUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DCD348A86AAB6D380DAF809E /* Pods_SmartLockUITests.framework */; };
 		B81BF4F6FE8831F0261A2698 /* Pods_SmartLock.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C08D2F8B2F59ADF1827E95A0 /* Pods_SmartLock.framework */; };
@@ -73,6 +74,7 @@
 		0D78F16D1FBEF14B008B7AEF /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		0D78F16E1FBEF14B008B7AEF /* KeyControlView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KeyControlView.swift; sourceTree = "<group>"; };
 		0D78F16F1FBEF14C008B7AEF /* KeyControlView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = KeyControlView.xib; sourceTree = "<group>"; };
+		0DC951B72120A109004D5FD9 /* UIView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Extension.swift"; sourceTree = "<group>"; };
 		39BF81210FE0628EBE0DE1C3 /* Pods-SmartLockUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SmartLockUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SmartLockUITests/Pods-SmartLockUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		86A81E3977D0493CE3B52C03 /* Pods-SmartLockTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SmartLockTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-SmartLockTests/Pods-SmartLockTests.release.xcconfig"; sourceTree = "<group>"; };
 		89396993FFFE4C19017EE292 /* Pods-SmartLockUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SmartLockUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-SmartLockUITests/Pods-SmartLockUITests.release.xcconfig"; sourceTree = "<group>"; };
@@ -119,6 +121,7 @@
 				0D00874C1FBEF75C007697B1 /* Session+Extension.swift */,
 				0D21ECD1211D35DF00520496 /* UIAlertController+Extension.swift */,
 				0D21ECD9211D39BC00520496 /* UIApplication+Extension.swift */,
+				0DC951B72120A109004D5FD9 /* UIView+Extension.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -261,7 +264,6 @@
 				0D2CFB651FB9426A00AD4FC1 /* Frameworks */,
 				0D2CFB661FB9426A00AD4FC1 /* Resources */,
 				3EA233495D7700677FBBE666 /* [CP] Embed Pods Frameworks */,
-				B226881BFD4FFB0DEFDE2B27 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -281,7 +283,6 @@
 				0D2CFB791FB9426B00AD4FC1 /* Frameworks */,
 				0D2CFB7A1FB9426B00AD4FC1 /* Resources */,
 				6F1324233BB5BE6327AC96EC /* [CP] Embed Pods Frameworks */,
-				EC0D21299050B5D52C96D3A5 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -301,8 +302,6 @@
 				0D2CFB831FB9426B00AD4FC1 /* Sources */,
 				0D2CFB841FB9426B00AD4FC1 /* Frameworks */,
 				0D2CFB851FB9426B00AD4FC1 /* Resources */,
-				FE2224F2310F2AB5A236C139 /* [CP] Embed Pods Frameworks */,
-				9E1653643C42FE07E2970F69 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -463,21 +462,6 @@
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SmartLockTests/Pods-SmartLockTests-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		9E1653643C42FE07E2970F69 /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SmartLockUITests/Pods-SmartLockUITests-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
 		9EA88A13EE127465318887D6 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -494,36 +478,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-		B226881BFD4FFB0DEFDE2B27 /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SmartLock/Pods-SmartLock-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		EC0D21299050B5D52C96D3A5 /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SmartLockTests/Pods-SmartLockTests-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		EDE533EB76B0D8D533839924 /* [CP] Check Pods Manifest.lock */ = {
@@ -544,21 +498,6 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		FE2224F2310F2AB5A236C139 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SmartLockUITests/Pods-SmartLockUITests-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -567,6 +506,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				0D00874D1FBEF75C007697B1 /* Session+Extension.swift in Sources */,
+				0DC951B82120A109004D5FD9 /* UIView+Extension.swift in Sources */,
 				0D00874F1FBEF7C1007697B1 /* APIClient.swift in Sources */,
 				0D21ECD0211C99EF00520496 /* Wifi.swift in Sources */,
 				0D0087531FBEF9B3007697B1 /* KeyControlViewModel.swift in Sources */,

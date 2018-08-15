@@ -10,8 +10,8 @@ import NetworkExtension
 import SystemConfiguration.CaptiveNetwork
 
 struct Wifi {
-    let ssid = ""
-    let password = ""
+    let ssid = "Buffalo-G-01DD"
+    let password = "hifiid5hrhivv"
     
     func isConnected() -> Bool {
         let interfaces = CNCopySupportedInterfaces()
