@@ -9,6 +9,7 @@
 import UIKit
 import RxSwift
 import RxCocoa
+import NCMB
 
 class ViewController: UIViewController {
     
@@ -25,6 +26,7 @@ class ViewController: UIViewController {
         if !wifi.isConnected(){
             self.wifiConnect()
         }
+        getNewKeyStatus()
         bind()
         // Do any additional setup after loading the view, typically from a nib.
     }
@@ -32,6 +34,19 @@ class ViewController: UIViewController {
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
+    }
+    
+    func getNewKeyStatus(){
+        let query = NCMBQuery(className: "status")
+        query?.limit = 1
+        query?.order(byDescending: "createDate")
+        query?.findObjectsInBackground({ comments, error in
+            let result = comments![0] as! NCMBObject
+            let f = DateFormatter()
+            f.setTemplate(.full)
+            self.xibView.timeTextFIeld.text = f.string(for: result.createDate)
+            self.xibView.controledTextField.text = result.object(forKey: "used") as? String
+        })
     }
     
     func wifiConnect() {

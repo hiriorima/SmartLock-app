@@ -16,6 +16,9 @@ class KeyControlView: UIView {
     @IBOutlet var contentView: UIView!
     @IBOutlet weak var currentLockStatusImage: UIImageView!
     
+    @IBOutlet weak var timeTextFIeld: UITextField!
+    @IBOutlet weak var controledTextField: UITextField!
+    
     let lockImage = UIImage(named:"Lock")!
     let unlockImage = UIImage(named:"Unlock")!
     

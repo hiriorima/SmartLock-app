@@ -14,8 +14,10 @@
             <connections>
                 <outlet property="closeButton" destination="snZ-hL-rTf" id="Dha-Vm-4GK"/>
                 <outlet property="contentView" destination="iN0-l3-epB" id="hhM-EI-hNi"/>
+                <outlet property="controledTextField" destination="1ew-MX-agc" id="WdO-6D-H0n"/>
                 <outlet property="currentLockStatusImage" destination="XZn-8K-yap" id="sfC-Df-xCg"/>
                 <outlet property="openButton" destination="4al-va-ZbY" id="bhU-W7-m2n"/>
+                <outlet property="timeTextFIeld" destination="HQZ-NG-Yy7" id="8kg-mb-3zC"/>
             </connections>
         </placeholder>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
@@ -43,16 +45,23 @@
                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         </imageView>
                         <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="最終履歴：" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="OAj-Xy-N5F">
-                            <rect key="frame" x="8" y="267" width="97" height="30"/>
+                            <rect key="frame" x="8" y="249" width="97" height="30"/>
                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             <fontDescription key="fontDescription" type="system" pointSize="15"/>
                             <textInputTraits key="textInputTraits"/>
                         </textField>
                         <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="時間" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="HQZ-NG-Yy7">
-                            <rect key="frame" x="94" y="267" width="192" height="30"/>
+                            <rect key="frame" x="93" y="249" width="192" height="30"/>
                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                            <textInputTraits key="textInputTraits"/>
+                        </textField>
+                        <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="操作" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="1ew-MX-agc">
+                            <rect key="frame" x="93" y="274" width="192" height="30"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             <fontDescription key="fontDescription" type="system" pointSize="15"/>
                             <textInputTraits key="textInputTraits"/>
                         </textField>

@@ -26,6 +26,7 @@
 		0D78F1711FBEF14C008B7AEF /* KeyControlView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D78F16E1FBEF14B008B7AEF /* KeyControlView.swift */; };
 		0D78F1721FBEF14C008B7AEF /* KeyControlView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0D78F16F1FBEF14C008B7AEF /* KeyControlView.xib */; };
 		0DC951B82120A109004D5FD9 /* UIView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DC951B72120A109004D5FD9 /* UIView+Extension.swift */; };
+		0DC951BA212497CF004D5FD9 /* DateFormatter+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DC951B9212497CF004D5FD9 /* DateFormatter+Extension.swift */; };
 		50DD636022A286AA7077F902 /* Pods_SmartLockTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DC1F4D3F776B3442F21A9ABA /* Pods_SmartLockTests.framework */; };
 		6EDB92B05BAE89AAA2E5B7E7 /* Pods_SmartLockUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DCD348A86AAB6D380DAF809E /* Pods_SmartLockUITests.framework */; };
 		B81BF4F6FE8831F0261A2698 /* Pods_SmartLock.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C08D2F8B2F59ADF1827E95A0 /* Pods_SmartLock.framework */; };
@@ -75,6 +76,7 @@
 		0D78F16E1FBEF14B008B7AEF /* KeyControlView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KeyControlView.swift; sourceTree = "<group>"; };
 		0D78F16F1FBEF14C008B7AEF /* KeyControlView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = KeyControlView.xib; sourceTree = "<group>"; };
 		0DC951B72120A109004D5FD9 /* UIView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Extension.swift"; sourceTree = "<group>"; };
+		0DC951B9212497CF004D5FD9 /* DateFormatter+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "DateFormatter+Extension.swift"; sourceTree = "<group>"; };
 		39BF81210FE0628EBE0DE1C3 /* Pods-SmartLockUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SmartLockUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SmartLockUITests/Pods-SmartLockUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		86A81E3977D0493CE3B52C03 /* Pods-SmartLockTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SmartLockTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-SmartLockTests/Pods-SmartLockTests.release.xcconfig"; sourceTree = "<group>"; };
 		89396993FFFE4C19017EE292 /* Pods-SmartLockUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SmartLockUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-SmartLockUITests/Pods-SmartLockUITests.release.xcconfig"; sourceTree = "<group>"; };
@@ -122,6 +124,7 @@
 				0D21ECD1211D35DF00520496 /* UIAlertController+Extension.swift */,
 				0D21ECD9211D39BC00520496 /* UIApplication+Extension.swift */,
 				0DC951B72120A109004D5FD9 /* UIView+Extension.swift */,
+				0DC951B9212497CF004D5FD9 /* DateFormatter+Extension.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -509,6 +512,7 @@
 			files = (
 				0D00874D1FBEF75C007697B1 /* Session+Extension.swift in Sources */,
 				0DC951B82120A109004D5FD9 /* UIView+Extension.swift in Sources */,
+				0DC951BA212497CF004D5FD9 /* DateFormatter+Extension.swift in Sources */,
 				0D00874F1FBEF7C1007697B1 /* APIClient.swift in Sources */,
 				0D21ECD0211C99EF00520496 /* Wifi.swift in Sources */,
 				0D0087531FBEF9B3007697B1 /* KeyControlViewModel.swift in Sources */,
